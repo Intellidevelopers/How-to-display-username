@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset Confirmation</title>
+</head>
+<body>
+    <h2>Password Reset Confirmation</h2>
+    <p>We have sent a verification link to your email: <span id="userEmail"></span></p>
+
+    <script>
+        var userEmail = localStorage.getItem("userEmail");
+        document.getElementById("userEmail").innerText = userEmail;
+        localStorage.removeItem("userEmail");
+    </script>
+</body>
+</html>
